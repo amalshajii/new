@@ -1,0 +1,15 @@
+echo "enter a number"
+read no
+rev=0
+temp =$no
+while [$no -ne 0]
+do
+d=$(($no%10))
+rev=$(($no/10))
+done
+if [$rev -eq $temp]
+then
+echo"armstrong"
+else
+echo "not amstrong"
+fi
